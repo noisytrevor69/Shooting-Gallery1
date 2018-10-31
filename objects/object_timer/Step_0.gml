@@ -1,8 +1,8 @@
 /// @DnDAction : YoYo Games.Common.Execute_Code
 /// @DnDVersion : 1
 /// @DnDHash : 725EBB6A
-/// @DnDArgument : "code" "mytime = mytime - 1"
-mytime = mytime - 1
+/// @DnDArgument : "code" "mytime = mytime - 1/30"
+mytime = mytime - 1/30
 
 /// @DnDAction : YoYo Games.Common.If_Variable
 /// @DnDVersion : 1
@@ -24,11 +24,16 @@ if(mytime == 0)
 	/// @DnDParent : 230D7479
 	/// @DnDArgument : "code" "window_set_cursor(cr_default)"
 	window_set_cursor(cr_default)
-}
 
-/// @DnDAction : YoYo Games.Common.Set_Global
-/// @DnDVersion : 1
-/// @DnDHash : 1EF8675D
-/// @DnDArgument : "value" "__dnd_score"
-/// @DnDArgument : "var" "end_score"
-global.end_score = __dnd_score;
+	/// @DnDAction : YoYo Games.Common.Set_Global
+	/// @DnDVersion : 1
+	/// @DnDHash : 1EF8675D
+	/// @DnDApplyTo : 7303d1e8-547f-49ef-9177-ac4a7c5fc7d4
+	/// @DnDParent : 230D7479
+	/// @DnDArgument : "value" "__dnd_score"
+	/// @DnDArgument : "var" "end_score"
+	with(object_controller) {
+	global.end_score = __dnd_score;
+	
+	}
+}
