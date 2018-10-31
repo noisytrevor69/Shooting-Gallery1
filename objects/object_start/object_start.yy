@@ -5,13 +5,13 @@
     "name": "object_start",
     "eventList": [
         {
-            "id": "5baddaef-0c56-437e-bf17-6652f6dc34ba",
+            "id": "9393d12b-d892-41a7-a565-4b2f6f989dbd",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": true,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
+            "enumb": 4,
+            "eventtype": 6,
             "m_owner": "54f0c319-47d0-4313-9d25-c120ed8da1be"
         }
     ],
